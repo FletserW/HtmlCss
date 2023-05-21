@@ -37,7 +37,7 @@
 /*====================== HEADER ======================*/
 header {
     background-color: var(--reader);
-    max-width: 600x;
+    max-width: 35.7x;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,12 +75,6 @@ nav ul li:hover{
 nav img{
     margin-left: 0.9375em;
 }
-
-@media (max-width: 37.5em) {
-    nav ul li a {
-      font-size: 1em;
-    }
-  }
 
 /*========== Menu ==========*/
 .dropdown {
@@ -157,12 +151,6 @@ main {
     text-align: justify;
 }
 
-@media (max-width: 37.5em) {
-    main {
-      font-size: 1em;
-    }
-}
-
 .dark-mode main{
     background-color: var(--maindark);
     box-shadow: 0.3125em 0.3125em 0.9375em var(--mainshadowdark);
@@ -185,22 +173,8 @@ h2 {
     line-height: 1.2em;
 }
 
-@media (max-width: 37.5em) {
-    h2 {
-        font-size: 1.4em; 
-    }
-
-}
-
 h3 {
     font-size: 1.2em;
-}
-
-@media (max-width: 37.5em) {
-    h3 {
-        font-size: 1.1em; 
-    }
-
 }
 
 abbr{
@@ -240,11 +214,11 @@ abbr{
     transition: opacity 0.3s ease;
 }
   
-  #backToTopBtn.show {
+#backToTopBtn.show {
     opacity: 1;
 }  
 
-  #backToTopBtn :hover{
+#backToTopBtn :hover{
     transform: scale(1.2);
 }
   
@@ -279,3 +253,42 @@ abbr{
     margin-right: 0.625em;
     margin-left: 0.9375em;
 }
+
+/*=========== Mobile Converções ===========*/
+
+/*========== Link Header ==========*/
+@media (max-width: 37.5em) {
+    nav ul li a {
+      font-size: 1em;
+    }
+}
+/*========== Main ==========*/
+@media (max-width: 37.5em) {
+    main {
+      font-size: 1em;
+      max-width: 35.7em;
+    }
+}
+/*========== H2 ==========*/
+@media (max-width: 37.5em) {
+    h2 {
+        font-size: 1.4em; 
+    }
+
+}
+/*========== H3 ==========*/
+@media (max-width: 37.5em) {
+    h3 {
+        font-size: 1.1em; 
+    }
+
+}
+/*========== Tags ==========*/
+@media (max-width: 37.5em) {
+    .tags{
+      font-size: 0.8em;
+    }
+}
+/*========== Menu ==========*/
+/*========== Menu ==========*/
+/*========== Menu ==========*/
