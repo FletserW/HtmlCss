@@ -157,7 +157,7 @@ main {
     text-align: justify;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
     main {
       font-size: 1em;
     }
@@ -182,13 +182,14 @@ h2 {
     font-family: 'manrope', sans-serif;
     font-weight: 1.8em;
     font-size: 1.8em;
-    line-height: 2.75em;
+    line-height: 1.2em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
     h2 {
-      font-size: 1.6em;
+        font-size: 1.4em; 
     }
+
 }
 
 h3 {
@@ -196,11 +197,8 @@ h3 {
 }
 
 @media (max-width: 37.5em) {
-    main {
-      font-size: 1em;
-    };
-    h2 {
-        font-size: 1.4em; 
+    h3 {
+        font-size: 1.1em; 
     }
 
 }
