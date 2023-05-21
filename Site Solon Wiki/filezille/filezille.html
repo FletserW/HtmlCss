@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../icons/favicon.png" type="image/x-icon">
+        <title>Solon Wiki</title>
+        <link rel="stylesheet" href="../estilo.css">
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"><img src="../icons/logo.png" alt="Logo do site"></a>
+            <nav id="navegacao">
+                <ul>
+                    <li><a href="../index.html">Página Inicial</a></li>
+                    <li><a href="#">Artigos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li class="dropdown">
+                        <img src="../icons/menu-toggle-icon.png" alt="Ícone do menu" class="menu-icon">
+                        <div class="dropdown-content">
+                            <button id="darkModeBtn" class="dropbtn">
+                                <img src="../icons/light-mode.png" alt="Botão Dark"> <span class="button-text">Alterar modo</span>
+                            </button>                                                         
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <script src="../script.js"></script> 
+    <main>
+      <section id="sobre">
+        <article>
+          <h2>Filezilla: entenda para que serve e como instalar</h2>
+          <p>O FileZilla é um software cliente FTP (Protocolo de Transferência de Arquivos) amplamente utilizado para enviar e receber arquivos entre computadores e servidores pela internet. Com uma interface intuitiva e recursos avançados, o FileZilla se destaca como uma das melhores opções disponíveis no mercado.</p>
+          <div class="image-container"><img src="sobre.jpg" alt="Duas pessoas no computador" class="imagem"></div>
+          <p>Neste artigo, exploraremos o que é o FileZilla, sua utilidade, as vantagens de usá-lo, além de fornecer um guia completo sobre como instalá-lo e conectá-lo à sua hospedagem.</p>
+          <p>Continue a leitura pra saber tudo sobre essa ferramenta, além de aprender a instalá-la e configurá-la no seu computador!<p>
+        </article>
+        <div class="tags">
+            <ul>
+                <li><a href="#oque">O que é FileZilla?</a></li>
+                <li><a href="#serve">Para que esse tipo de software serve?</a></li>
+                <li><a href="#vantagens">Quais são as principais vantagens de usar o Filezilla?</a></li>
+                <li><a href="#instalar">Como instalar o FileZilla?</a></li>
+                <li><a href="#conectar">Como conectar o FileZilla à minha hospedagem?</a></li>
+            </ul>
+        </div>
+      </section> 
+      <section id="oque">
+        <article>
+          <h2>O que é FileZilla?</h2>
+          <p>O FileZilla é um software cliente <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr> de código aberto amplamente utilizado para transferir arquivos entre computadores e servidores pela internet. Ele oferece uma interface intuitiva e fácil de usar, permitindo que os usuários gerenciem seus arquivos de site de forma eficiente.</p>
+          <p>Ele é compatível com os principais sistemas operacionais, como Windows, Linux e macOS, tornando-o acessível para uma ampla gama de usuários. Sua popularidade se deve à sua estabilidade, segurança e recursos avançados, tornando-o uma escolha confiável para profissionais da web que precisam transferir arquivos de forma segura e rápida.</p>
+        </article>
+      </section>
+        <section id="serve">
+            <article>
+              <h2>Para que esse tipo de software serve?</h2>
+              <p>O FileZilla desempenha um papel fundamental no gerenciamento de arquivos de um site. Ele permite que os usuários realizem diversas tarefas, como fazer upload de arquivos para o servidor de hospedagem, fazer download de arquivos do servidor para o computador local, excluir arquivos, renomear arquivos e pastas, e muito mais.</p>
+              <p>Ao usar o FileZilla, os usuários têm controle total sobre o conteúdo de seus sites, podendo adicionar ou modificar arquivos com facilidade. Além disso, o FileZilla oferece recursos avançados, como a capacidade de agendar transferências automáticas, realizar transferências de arquivos em lote e sincronizar diretórios locais com o servidor remoto, agilizando o processo de gerenciamento de arquivos.</p>
+              <aside>
+                <ul>
+                    <li>para adicionar arquivos muito extensos ou em formatos não suportados pelo gerenciador de arquivos do <abbr title="Sistema de gerenciamento de conteúdo">CMS</abbr> ou da hospedagem;</li>
+                    <li>ao limpar arquivos inúteis ou residuais de plugins desinstalados, que podem estar comprometendo a velocidade do site;</li>
+                    <li>para restringir o acesso a determinadas áreas do banco de dados por questões de hierarquia, segurança ou privacidade;</li>
+                    <li>para corrigir erros ou problemas de desempenho ocasionados por arquivos problemáticos ou documentos mal alocados.</li>
+                </ul>
+              </aside>
+              <p>Além das funções mencionadas, é importante ressaltar a facilidade que os clientes <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr>, como o FileZilla, proporcionam. Uma vez instalado e conectado ao servidor da sua hospedagem, iniciar o programa e gerenciar seus arquivos é tão simples quanto um clique.</p>
+              <p>Essa simplicidade é um diferencial significativo em comparação com o uso de serviços online semelhantes dentro da sua empresa de hospedagem, onde o tempo necessário para acessar essas ferramentas é consideravelmente maior e envolve várias etapas adicionais, como logins, autenticações e busca no cPanel.</p>
+              <p>Ao utilizar o FileZilla, você ganha agilidade e praticidade no gerenciamento dos arquivos do seu site. Com apenas alguns cliques, é possível transferir arquivos para o servidor de hospedagem ou fazer o download de arquivos do servidor para o seu computador local. Além disso, o FileZilla oferece recursos avançados, como a capacidade de organizar os arquivos em pastas, renomear arquivos e excluir itens indesejados, proporcionando um controle total sobre o conteúdo do seu site.</p>
+              <p>Outro benefício de usar o FileZilla é a economia de tempo. Ao evitar os procedimentos complexos e demorados de autenticação e navegação por meio de painéis de controle online, você pode se concentrar nas tarefas mais importantes, como atualizar o conteúdo do seu site ou fazer ajustes nos arquivos.</p>
+              <p>A interface intuitiva e amigável do FileZilla facilita a localização e a manipulação dos arquivos, permitindo que você realize suas tarefas de forma eficiente e sem complicações desnecessárias. Com o FileZilla, o gerenciamento de arquivos do seu site se torna uma experiência simplificada e produtiva.</p>
+            </article>
+        </section>
+        <section id="vantagems">
+          <article>
+            <h2>Quais são as principais vantagens de usar o Filezilla?</h2>
+            <p>Existem várias opções de clientes <abbr title="">FTP</abbr> disponíveis na internet, como Cyberduck, WinSCP e Transmit. No entanto, o FileZilla se destaca no mercado devido à sua facilidade de uso e à variedade de recursos que oferece, o que é surpreendente considerando que é uma solução gratuita.</p>
+            <p>A simplicidade da sua interface torna o FileZilla acessível mesmo para usuários iniciantes, enquanto as suas funcionalidades avançadas atendem às necessidades dos usuários mais experientes. Combinando usabilidade e recursos robustos, o FileZilla se estabeleceu como uma escolha popular para quem busca um cliente <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr> confiável e eficiente.</p>
+            <aside>
+              <ul>
+                <li><strong>Interface direta e intuitiva:</strong> o FileZilla possui uma interface amigável que facilita a realização de tarefas de gerenciamento de arquivos. Todas as funções estão prontamente disponíveis, tornando a manipulação de arquivos tão simples quanto usar o gerenciador de arquivos do seu computador.</li>
+                <li><strong>Transferências rápidas:</strong> o FileZilla oferece uma das velocidades de transmissão mais rápidas entre os clientes <abbr title="">FTP</abbr>, permitindo transferências rápidas de arquivos, tanto para downloads quanto para uploads.</li>
+                <li><strong>Compatibilidade com CMS:</strong> o FileZilla é perfeitamente compatível com os principais sistemas de gerenciamento de conteúdo (CMS), como o <a href="../wordpress/wordpress.html">WordPress</a>. Isso significa que você pode instalar temas e plugins diretamente pelo FileZilla, simplificando ainda mais o processo de atualização do seu site.</li>
+                <li><strong>Edição de códigos-fonte:</strong> o FileZilla permite que você edite códigos-fonte diretamente pelo cliente <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr>, o que é especialmente útil para corrigir erros ou realizar ajustes rápidos em seu site.</li>
+              </ul>
+            </aside>
+            <p>Além das funcionalidades mencionadas anteriormente, é importante ressaltar a facilidade proporcionada pelos clientes <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr>, como o FileZilla. Após a instalação e a conexão com o servidor de hospedagem, você pode iniciar o programa com apenas um clique e começar a gerenciar seus arquivos. Essa simplicidade de uso é uma vantagem significativa, permitindo que você acesse e manipule facilmente os arquivos do seu site.</p>
+            <p>Mesmo se você estiver usando um serviço semelhante online fornecido pela sua empresa de hospedagem, o tempo necessário para acessá-lo é consideravelmente maior e envolve várias etapas adicionais, como logins, autenticações e buscas no cPanel.
+            </p>
+            <p>Em contraste, o FileZilla oferece uma solução mais direta e eficiente, eliminando a necessidade de percorrer múltiplos passos para alcançar suas tarefas de gerenciamento de arquivos. Essa praticidade economiza tempo e simplifica o processo, tornando o FileZilla uma escolha conveniente para aqueles que desejam uma forma ágil e descomplicada de gerenciar seus arquivos de hospedagem.</p>
+          </article>
+        </section>
+        <section id="instalar">
+          <article>
+            <h2>Como instalar o FileZilla?</h2>
+            <p>Para fazer o download do FileZilla, é recomendável <strong>acessar o site oficial do projeto</strong> em <a href="https://filezilla-project.org">https://filezilla-project.org</a>. Lá, você encontrará os links para as duas modalidades de serviço: o FileZilla Client, que conecta computadores comuns a servidores, e o FileZilla Server, que é instalado em servidores para permitir o acesso por computadores comuns.</p>
+            <p>Ao acessar a página inicial do site, você verá a seção "Quick download links" com as opções disponíveis. Para baixar o FileZilla Client, que é o que você precisa, clique no link "<strong>Download FileZilla Client</strong>". Essa escolha é essencial para garantir que você obtenha a versão mais recente e segura do programa.</p>
+            <p>É importante ressaltar que baixar o FileZilla a partir do site oficial do projeto é altamente recomendado, pois garante a integridade do software e reduz o risco de obter versões adulteradas ou desatualizadas. Portanto, ao iniciar o processo de download, certifique-se de utilizar o link fornecido no site oficial para desfrutar da melhor experiência com o FileZilla.</p>
+            <div class="image-container"><img src="instalar_01.jpg" alt="Download file Client" class="imagem"></div>
+            <aside>
+              <h3>Selecione o arquivo compatível com seu sistema operacional</h3>
+              <p>Após acessar o site oficial do FileZilla, na próxima página, verifique se o sistema operacional exibido está correto. Se for o caso, simplesmente clique em "Download FileZilla Client" e prossiga com o processo de download.</p>
+              <p>No entanto, se o sistema operacional exibido não corresponder ao seu, não se preocupe. Na mesma página, você encontrará a opção "Other platforms..." logo abaixo. Nessa seção, você verá os logotipos dos diferentes sistemas operacionais suportados. Basta selecionar o logotipo do seu sistema operacional para ser redirecionado à página de download do arquivo correto.</p>
+              <p>Dessa forma, você poderá baixar a versão adequada do FileZilla Client compatível com o seu sistema operacional e aproveitar todos os recursos oferecidos por esse software confiável e eficiente.</p>
+              <div class="image-container"><img src="instalar_02.jpg" alt="Other platforms" class="imagem"></div>
+              <p>Ao baixar a versão do FileZilla para o sistema operacional Windows, você será apresentado a uma janela com várias opções do programa, incluindo algumas versões pagas. Nesse momento, é importante selecionar a primeira opção, que é a versão gratuita do FileZilla, disponível para download direto.</p>
+              <p>Essa opção gratuita do FileZilla Client oferece todas as funcionalidades necessárias para a gestão de arquivos por meio do protocolo <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr>. Portanto, ao selecioná-la, você garantirá o acesso à versão correta e gratuita do software.</p>
+              <div class="image-container"><img src="instalar_03.jpg" alt="Opçoes de download" class="imagem"></div>
+            </aside>
+            <aside>
+              <h3>Inicie o instalador e instale o FileZilla</h3>
+              <p>Depois de ter baixado o arquivo de instalação do FileZilla, você pode executá-lo e seguir os passos a seguir para concluir a instalação:</p>
+              <p>1. Na primeira janela, você encontrará um botão chamado <strong>"I Agree" (Eu concordo)</strong>. Clique nele para confirmar que você concorda com as licenças de uso do serviço.</p>
+              <p>2. Na segunda janela, pode ser oferecido um software adicional para instalação. Caso não queira instalar esse software adicional, desmarque a caixa de seleção do anúncio que diz "Já li a Política de Privacidade e concordo..." e clique em <strong>"Next" (Próximo)</strong>.</p>
+              <p>3. Após seguir essas etapas, a instalação do FileZilla será concluída. Para finalizar o assistente e iniciar o FileZilla, clique em <strong>"Finish" (Finalizar)</strong>.</p>
+              <p>Agora você estará pronto para utilizar o FileZilla e aproveitar as funcionalidades oferecidas por esse cliente <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr> confiável e fácil de usar.</p>
+            </aside>
+          </article>
+        </section>
+        <section id="conectar">
+          <h2>Como conectar o FileZilla à minha hospedagem?</h2>
+          Uma das grandes vantagens do FileZilla é a sua conexão rápida. Diferentemente de outros clientes <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr>, a configuração do serviço no servidor é simples e não requer um conhecimento técnico aprofundado.
+          <p>Antes de tudo, é importante verificar se a sua empresa de hospedagem oferece acesso aos servidores por meio do FileZilla. Devido à popularidade do serviço, é improvável que essa opção não esteja disponível, mas é recomendável confirmar essa informação.</p>
+          <p>Os dados necessários para estabelecer a conexão são os seguintes:</p>
+          <aside>
+            <ul>
+              <li><strong>Host:</strong> esse é o endereço do servidor ao qual você deseja se conectar.</li>
+              <li><strong>Nome de usuário: </strong>pode ser o mesmo que você usa para acessar a hospedagem, mas isso pode variar.</li>
+              <li><strong>Senha:</strong> também pode ser a mesma utilizada no login do host, mas, novamente, isso pode variar.</li>
+              <li><strong>Porta:</strong> indica a aplicação específica que você pretende acessar.</li>
+            </ul>
+          </aside>
+          <p>Normalmente, esses dados estão disponíveis no dashboard ou cPanel da sua hospedagem. No entanto, em alguns casos, pode ser necessário entrar em contato com a empresa para obtê-los. Isso depende do serviço que você está utilizando.</p>
+          <p>Com as informações em mãos, basta inseri-las nos campos indicados, localizados logo abaixo do menu superior do programa, e em seguida clicar em <strong>"Conexão rápida"</strong>. Assim, você estará pronto para se conectar ao servidor e aproveitar os recursos oferecidos pelo FileZilla.</p>
+          <div class="image-container"><img src="instalar_04.jpg" alt="Conexao rapida" class="imagem"></div>
+          <p>Além desse método rápido e fácil de conexão, é importante ressaltar que, dependendo do seu provedor de hospedagem, podem ser necessárias outras ações. Portanto, é essencial verificar os requisitos específicos do seu host.</p>
+          <p>Após estabelecer a conexão, você terá acesso às pastas do seu banco de dados no programa. Na maioria das instalações com sistemas de gerenciamento de conteúdo (CMS), os arquivos visíveis do site estão localizados no diretório "public_html". É nesse diretório que você provavelmente realizará a maioria dos ajustes e modificações.</p>
+          <p>Com isso, concluímos nosso guia sobre o FileZilla, e esperamos que as informações fornecidas tenham ajudado você a entender melhor e utilizar essa ferramenta. O FileZilla pode ser extremamente útil na sua rotina e na solução de problemas do seu site, facilitando a gestão de arquivos e tornando o processo mais eficiente.</p>
+          <p>Caso você esteja enfrentando dificuldades para fazer a conexão e transferir arquivos usando o FileZilla, recomendamos que assista a um vídeo explicativo da <a href="https://www.hostgator.com.br">HostGator</a> que aborda o processo detalhadamente. O vídeo fornece instruções passo a passo sobre como configurar o FileZilla, estabelecer a conexão com o servidor e realizar as transferências de arquivos.</p>
+          <p>Assistir ao tutorial em vídeo é uma maneira eficaz de visualizar as etapas e facilitar a utilização do FileZilla para transferir seus arquivos para a hospedagem. Assistir ao vídeo e obtennha assistência adicional.</p>
+          <div class="image-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/12iM2XbR6Lo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <br>A <a href="https://wiki.filezilla-project.org/Main_Page" target="_blank" rel="external">Wiki oficial do FileZilla</a> é uma fonte de documentação em inglês que oferece guias, tutoriais e respostas para perguntas frequentes sobre o software. É um recurso valioso para obter suporte adicional e aprofundar o conhecimento sobre o FileZilla. Acessando o link fornecido, você encontrará uma variedade de informações úteis para resolver problemas e aproveitar ao máximo o FileZilla.
+        </section>
+    </main> 
+    <footer>
+      <p>&copy; 2023 Solon Wiki. Todos os direitos reservados.</p>
+    </footer>
+    <a href="#" id="backToTopBtn">
+      <img src="../icons/up-button-icon.png" alt="Botão de Retorno ao Topo">
+    </a>
+  </body>
+</html>    

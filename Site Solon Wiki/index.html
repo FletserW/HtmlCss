@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+        <title>Solon Wiki</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <header>
+                <a href="index.html"><img src="icons/logo.png" alt="Logo do site" class="logo"></a>
+            <nav id="navegacao">
+                <ul>
+                    <li><a href="index.html">Inicial</a></li>
+                    <li><a href="#">Artigos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li class="dropdown">
+                        <img src="icons/menu-toggle-icon.png" alt="Ícone do menu" class="menu-icon">
+                        <div class="dropdown-content">
+                            <button id="darkModeBtn" class="dropbtn">
+                                <img src="icons/light-mode.png" alt="Botão Dark"> <span class="button-text">Alterar modo</span>
+                            </button>                                                         
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <style>            
+                .image-grid {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                }
+
+                .image-item {
+                    text-align: center;
+                    transition: transform 0.3s ease-in-out;
+                }
+
+                .image-item:hover {
+                    transform: scale(1.05);
+                }
+
+                .image-item img {
+                    width: 100%;
+                    max-width: 200px;
+                    height: auto;
+                }
+
+                .image-text {
+                    background-color: #FF6428;
+                    padding: 10px;
+                    font-size: 18px;
+                    color: #333;
+                    margin-top: 10px;
+                }
+            </style>
+        </header>
+    
+        <script>
+            function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle("dark-mode");
+
+            // Verifica se a classe "dark-mode" está presente no body
+            var isDarkMode = body.classList.contains("dark-mode");
+
+            // Define a cor do texto com base no modo escuro ativado/desativado
+            var navLinks = document.querySelectorAll("main");
+            for (var i = 0; i < navLinks.length; i++) {
+                if (isDarkMode) {
+                navLinks[i].style.color = "#ffffff"; // Cor do texto no modo escuro
+                } else {
+                navLinks[i].style.color = "#000000"; // Cor do texto no modo claro
+                }
+            }
+            }
+
+            var darkModeBtn = document.getElementById("darkModeBtn");
+
+            function isDarkMode() {
+            return document.body.classList.contains("dark-mode");
+            }
+
+            function updateDarkModeButton() {
+            if (isDarkMode()) {
+                darkModeBtn.innerHTML = '<img src="icons/dark-mode.png" alt="Botão Dark"><span class="button-text">Alterar modo</span>';
+            } else {
+                darkModeBtn.innerHTML = '<img src="icons/light-mode.png" alt="Botão Dark"><span class="button-text">Alterar modo</span>';
+            }
+            }
+
+            updateDarkModeButton();
+
+            darkModeBtn.addEventListener("click", function() {
+            toggleDarkMode();
+            updateDarkModeButton();
+            });
+
+            // Função para verificar a posição da página
+            function checkScrollPosition() {
+            var backToTopBtn = document.getElementById("backToTopBtn");
+
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add("show");
+            } else {
+                backToTopBtn.classList.remove("show");
+            }
+            }
+
+            // Adiciona o evento de scroll para chamar a função checkScrollPosition
+            window.addEventListener("scroll", checkScrollPosition);
+
+            // Função para rolar suavemente para o topo da página
+            function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+            }
+
+            // Adiciona o evento de clique no botão para chamar a função scrollToTop
+            var backToTopBtn = document.getElementById("backToTopBtn");
+            backToTopBtn.addEventListener("click", scrollToTop);
+
+        </script>   
+
+        <main>
+            <section id="introducao">
+                <h2 style="text-align: center";>Bem-vindo ao Solon Wiki</h2>
+                <p>Seu guia completo sobre tecnologia e inovação.</p>
+                <p>Explore nossos artigos e descubra informações valiosas sobre os mais diversos temas relacionados à tecnologia, desde tutoriais e guias até as últimas novidades e tendências.</p>
+                <p>Junte-se a nós e compartilhe conhecimento, aprenda e descubra o mundo da tecnologia em constante evolução.</p>
+            </section>
+            <section id="popularity-pages">
+                <h2>Veja as Paginas mais visitadas</h2>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <a href="filezille/filezille.html">
+                            <img src="filezille/filezille_logo.png" alt="Imagem 1">
+                            <div class="image-text">FileZilla</div>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="ftp/FTP.html">
+                            <img src="ftp/FTP_logo.png" alt="Imagem 2">
+                            <div class="image-text">Protocolo FTP</div>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="wordpress/wordpress.html">
+                            <img src="wordpress/wordpress_logo.png" alt="Imagem 3">
+                            <div class="image-text">wordpress</div>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="pagina4.html">
+                            <img src="test.png" alt="Imagem 4">
+                            <div class="image-text">Descrição da imagem 4</div>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="pagina5.html">
+                            <img src="test.png" alt="Imagem 5">
+                            <div class="image-text">Descrição da imagem 5</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Solon Wiki. Todos os direitos reservados.</p>
+        </footer>
+        <a href="#" id="backToTopBtn">
+            <img src="icons/up-button-icon.png" alt="Botão de Retorno ao Topo">
+        </a>
+    </body>
+</html>

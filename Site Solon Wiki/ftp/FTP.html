@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../icons/favicon.png" type="image/x-icon">
+        <title>Solon Wiki</title>
+        <link rel="stylesheet" href="../estilo.css">
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"><img src="../icons/logo.png" alt="Logo do site"></a>
+            <nav id="navegacao">
+                <ul>
+                    <li><a href="../index.html">Página Inicial</a></li>
+                    <li><a href="#">Artigos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li class="dropdown">
+                        <img src="../icons/menu-toggle-icon.png" alt="Ícone do menu" class="menu-icon">
+                        <div class="dropdown-content">
+                            <button id="darkModeBtn" class="dropbtn">
+                                <img src="../icons/light-mode.png" alt="Botão Dark"> <span class="button-text">Alterar modo</span>
+                            </button>                                                         
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <script src="../script.js"></script> 
+    <main>
+        <div id="sobre">
+            <h2>O que é FTP, como acessar e configurar no seu servidor</h2>
+            <p>O FTP, ou Protocolo de Transferência de Arquivos, desempenha um papel fundamental no funcionamento adequado de um site WordPress. Ele permite que os usuários realizem a transferência de arquivos e resolvam problemas que possam surgir ao operar o site.</p>
+            <div class="image-container"><img src="FTP_01.jpg" alt="Representação FTP" class="imagem"></div>
+            <p>Entender como ocorre a transferência de dados entre o dispositivo do usuário e o serviço de hospedagem, bem como a estrutura dos diretórios do WordPress, é essencial para garantir o bom funcionamento do projeto. Assim como um equipamento precisa dos comandos corretos para operar, um site requer uma estrutura apropriada para alcançar um desempenho satisfatório.</p>
+            <p>O <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr> possibilita o acesso à estrutura de arquivos do site, o que permite aos usuários resolver problemas decorrentes de alterações no código do template, incompatibilidade de extensões ou instalação inadequada de plugins e outros elementos.</p>
+            <p>Neste artigo, abordaremos o funcionamento do <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr>, explicando como ele realmente funciona, os problemas que podem ser solucionados por meio dele e outros aspectos relevantes para utilização efetiva dessa ferramenta no contexto do WordPress.</p>
+        </div>
+        <div class="tags">
+          <ul>
+            <li><a href="#oque">O que é FTP?</a></li>
+            <li><a href="#instalar">Como instalar o FTP?</a></li>
+            <li><a href="#configurar">Como configurar o FTP?</a></li>
+            <li><a href="#usar">Como usar o FTP?</a></li>
+            <li><a href="#problemas">Quais os problemas no WordPress posso resolver pelo FTP?</a></li>
+          </ul>
+        </div>
+        <div id="oque">
+            <h2>O que é FTP?</h2>
+            <p>O FTP (Protocolo de Transferência de Arquivos) estabelece uma conexão entre o dispositivo do usuário e um servidor, geralmente pertencente ao serviço de hospedagem escolhido. Essa conexão permite a troca de dados entre os sistemas quando estão conectados à internet.</p>
+            <p>O <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr> foi desenvolvido na década de 1970 como parte do avanço da tecnologia computacional e das primeiras redes e conexões. Criado por Abhay Bhushan, que era estudante de Engenharia Elétrica no Massachussets Institute of Technology na época, o objetivo principal do <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr> era criar um protocolo de transferência mais seguro, capaz de prevenir tentativas de intrusão e roubo de informações.</p>
+            <p>Com o passar do tempo e as melhorias no código e capacidade de armazenamento dos equipamentos, o <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr> se consolidou como um dos métodos mais eficientes de compartilhamento de dados na internet.</p>
+            <p>O fluxo de transferência de dados ocorre por meio de um programa que conecta dois agentes: o cliente, que solicita a conexão e acesso aos dados hospedados, e o servidor, uma infraestrutura mais robusta composta por um ou mais equipamentos responsáveis por operações e armazenamento de informações. O servidor recebe a solicitação do cliente e concede autorização com base na política de acesso adotada, geralmente exigindo um login e senha.</p>
+        </div>
+        <div id="instalar">
+            <h2>Como instalar o FTP?</h2>
+            <p>Ao acessar o <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr>, você precisa utilizar uma aplicação específica que requer um login e uma senha para autorização. Além disso, é importante especificar a porta de conexão correta.</p>
+            <p>Existem diferentes opções de aplicativos de <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr> disponíveis, e você pode escolher aquele que melhor atende às suas necessidades. Alguns exemplos populares incluem:</p>
+            <ul>
+              <li>FileZilla;</li>
+              <li>Free FTP;</li>
+              <li>ProFTPd;</li>
+              <li>SmartFTP;</li>
+              <li>Pure-FTPd;</li>
+              <li>VsFTPd;</li>
+              <li>Titan FTP Server;</li>
+              <li>Cyberduck;</li>
+              <li>Kasablanca;</li>
+              <li>WinSCP</li>
+            </ul>
+            <p>Você pode obter o programa de <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr> adequado para você, fazer o download e instalá-lo em seu computador. Esses aplicativos são especialmente úteis para operações de arquivo mais complexas e robustas. </p>
+            <p>Se o seu serviço de hospedagem oferecer um aplicativo da web para acesso ao <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr>, você poderá encontrá-lo na interface do usuário ou no painel de controle. No entanto, se você preferir utilizar um programa de terceiros, recomendamos escolher uma das opções mencionadas anteriormente.</p>
+            <p>Dessa forma, você estará pronto para aproveitar todos os recursos e benefícios do <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr> ao gerenciar seus arquivos e realizar operações de transferência de dados de forma eficiente.dade, faça o download e instale o cliente de <abbr title="Protocolo de Transferência de Arquivos">FTP</abbr> no seu computador.</p>  
+        </div>
+        <div id="configurar"> 
+            <h2>Como configurar o FTP?</h2>
+            <p>Se a sua hospedagem <a href="../wordpress/wordpress.html">WordPress</a> for gerenciada, como a do Stage, é recomendado consultar o suporte técnico para obter orientações sobre como instalar, configurar e acessar o FTP. No entanto, se você não possui uma hospedagem gerenciada, siga os seguintes passos:</p>
+            <ul>
+              <li>Inicie o programa de FTP previamente instalado em seu computador.</li>
+              <li>Digite o endereço quando solicitado. Essa informação varia de acordo com o provedor de hospedagem, mas geralmente os dados estão disponíveis no painel de controle do servidor. No cPanel, por exemplo, você pode encontrar essas informações em "Contas FTP". O endereço costuma ser o mesmo que o nome de domínio com o prefixo "ftp" (ftp.seusite.com).</li>
+              <li>Insira o seu nome de usuário e senha, que são os mesmos definidos ao criar a sua conta ou utilizados para acessar o cPanel.
+                Digite a porta de acesso FTP. O valor padrão é 21 para FTP e 22 para SFTP.</li>
+              <li>Clique no botão "Connect" ou "Quickconnect" para estabelecer a conexão com a sua conta de hospedagem.</li>
+            </ul>
+            Caso o seu domínio não esteja apontando para o seu host, você pode tentar utilizar o IP do servidor, que é especificado nas configurações.
+            Vamos supor que você tenha escolhido o FileZilla como o programa de FTP para realizar essas etapas. Na figura abaixo, você pode ver as seções principais da interface do FileZilla, onde você irá inserir as informações de conexão e visualizar os diretórios e arquivos do seu site.
+            <div class="image-container"><img src="FTP_02.png" alt="Conexâo rapida"></div>
+        </div>
+        <div id="usar"> 
+            <h2>Como usar o FTP?</h2>
+            <p>Para copiar algum arquivo, basta <strong>localizá-lo em seu computador na parte esquerda do programa e jogá-lo para a parte direita</strong> em seu servidor.</p>
+            <p>Entretanto, antes de usar o FTP, você deve saber como é feita a estruturação dos arquivos e diretórios no WordPress. Isso é essencial para que o CMS funcione adequadamente, uma vez que a falta de um único arquivo pode derrubar o seu site e causar vários problemas sobre os quais falaremos a seguir.</p>
+            <p>Além disso, conhecer e saber como acessar os arquivos e diretórios no WordPress pode ajudar você a corrigir vários problemas que podem surgir. Por exemplo, um plugin instalado inadequadamente que bloqueou o acesso ao dashboard de administração do site — a única forma de excluí-lo é por meio do acesso ao FTP.</p>
+            <h3>Pastas</h3>
+            <p>A estrutura do diretório é formado pelas seguintes pastas.</p>
+            <h3>wp-admin</h3>
+            <p>A pasta wp-content tem dois subdiretórios: plugins e temas, que armazenam dados relacionados a essas extensões no WordPress. A cada instalação, uma nova subpasta é criada com o nome do elemento adicionado.</p>
+            <h3>Arquivos</h3>
+            <p>Além das pastas, o diretório do WordPress, cujo acesso acontece por meio do FTP, é formado por <b>arquivos de configuração</b>, como:</p>
+            <ul>
+                <li>htaccess — usado para gerenciar redirecionamentos e links permanentes;</li>
+                <li>wp-config.php — que ajuda o WP a se conectar com o banco de dados e delimita algumas configurações para os sites;</li>
+                <li>o index.php — arquivo principal, por meio do qual o WP carrega os posts que serão exibidos e usados como substituição sempre que faltar um arquivo base do CMS.</li> 
+            </ul>
+            <p>Além desses, o style.css — um arquivo CSS declarativo e necessário para a criação de temas no WordPress — controla a apresentação das páginas. Veja outros arquivos importantes a seguir:</p>
+            <ul>
+              <li>license.txt</li>
+              <li>readme.html</li>
+              <li>wp-activate.php</li>
+              <li>wp-blog-header.php</li>
+              <li>wp-comments-post.php</li>
+              <li>wp-config-sample.php</li>
+              <li>wp-cron.php</li>
+              <li>wp-links-opml.php</li>
+              <li>wp-load.php</li>
+              <li>wp-login.php</li>
+              <li>wp-mail.php</li>
+              <li>wp-settings.php</li>
+              <li>wp-signup.php</li>
+              <li>wp-trackback.php</li>
+              <li>xmlrpc.php</li>
+              <li>robots.txt</li>
+            </ul>
+            <p>É recomendado que o usuário <strong>mantenha a estrutura padrão</strong>, pois pequenas modificações podem inviabilizar todo o funcionamento do site. O arquivo zip do WP para download contém todos esses componentes e o usuário precisa apenas extraí-los e enviá-los ao seu serviço de hospedagem por meio do FTP.</p>
+            Caso você acesse o FTP <strong>sem precisar baixar um programa</strong>, digite “ftp://número do ip” no navegador para que um prompt de comando solicite o login e senha de acesso.
+        </div>
+        <div id="problemas">
+          <h2>Quais os problemas no WordPress posso resolver pelo FTP?</h2>
+          <p>Ter acesso via FTP permite que o usuário corrija vários erros e problemas comuns no WordPress. Veja alguns deles a seguir.</p>
+          <h3>Erros de conexão de banco de dados no WordPress</h3>
+          <div class="image-container"><img src="FTP_03.png" alt="Erro de conexão" class="imagem"></div>
+          <p>Se ocorrer um erro ao <strong>estabelecer uma conexão com o banco de dados no WordPress</strong>, a primeira ação que você deve realizar é entrar no painel de administração. Caso apareça o aviso “erro de banco de dados indisponível”, você precisa reparar essa conexão por meio do acesso FTP:</p>
+          <ol>
+            <li>Acesse a pasta raiz do seu WordPress e edite o arquivo wp-config.php.</li>
+            <li>Adicione a seguinte linha ao final do arquivo: <code>define('WP_ALLOW_REPAIR', true);</code></li>
+            <li>Depois de salvar e recarregar o arquivo wp-config.php, visite a seguinte URL em seu navegador: <code>www.seudominio.com/wp-admin/maint/repair.php</code>. Isso abrirá um utilitário de manutenção do WordPress que permite reparar seus bancos de dados. Clique no botão para iniciar o processo.</li>
+            <li>Depois de terminar o processo, edite o arquivo wp-config.php novamente para remover a linha que você adicionou.</li>
+          </ol>
+          <h3>Erro de memória esgotada do WordPress</h3>
+          <p>Caso o seu site ou blog do WordPress mostre um <strong>erro de memória esgotada</strong>, isso também pode ser corrigido com acesso ao FTP. A correção permite adicionar mais elementos de personalização, como plugins. A capacidade de memória padrão para WordPress é de 64 MB, o que geralmente é suficiente para a maioria dos casos. No entanto, pode <strong>haver situações em que o usuário necessite de mais</strong>.</p>
+          <div class="image-container"><img src="FTP_04.png" alt="Erro de memoria" class="imagem"></div>
+          <p>Todas as funções de um site em WordPress demandam memória, assim como um computador. Para aumentar a memória do seu WP, siga estes passos:</p>
+          <ol>
+            <li>Acesse o diretório FTP e abra a pasta raiz do WordPress.</li>
+            <li>Procure pelo arquivo wp-config.php.</li>
+            <li>Clique no arquivo e digite na última linha: <code>define('WP_MEMORY_LIMIT', '256M');</code></li>
+          <p>Isso definirá o limite de memória alocada para 256 MB, o que deve ser mais do que suficiente para que o erro de esgotamento de memória seja resolvido.</p>
+          </ol>
+          <h3>“Tela Branca da Morte”</h3>
+          <div class="image-container"><img src="FTP_05.png" alt="Erro tela branca" class="imagem"></div>
+          <p>Imagine o seguinte: <strong>você tenta acessar seu site e tudo o que obtém é uma tela completamente branca</strong>. Isso geralmente acontece quando plugins ou templates com erros estão ativos no WordPress. Entretanto, esse problema é crítico, porque também impede o acesso ao painel de administração do WordPress.</p>
+          <p>Nessas situações, a <strong>única solução é conectar-se ao arquivo WordPress e à estrutura de diretório por meio do acesso FTP</strong>. Se você já supõe que o erro está em um plugin, o caminho mais fácil é a desativação em bloco, de todos de uma vez. Dessa forma, se o erro não ocorrer mais, você precisará renomear cada arquivo individualmente para testar. Então vamos ao passo a passo:</p>
+          <ol>
+            <li>Acesse o FTP.</li>
+            <li>Encontre o diretório raiz onde instalou e faz uso do WordPress.</li>
+            <li>Localize a pasta wp-content/plugins.</li>
+            <li>Renomeie a pasta inteira (escolha qualquer outro nome, mas não se esqueça que você precisará refazer esse passo depois, então lembre-se do nome escolhido).</li>
+          </ol>
+          <div class="image-container"><img src="FTP_06.png" alt="Desativar puglins" class="imagem"></div>
+
+          <p>Pronto, agora todos os plugins estão desativados. Acesse novamente a página e veja se o problema foi resolvido. Se sim, você precisará renomear cada arquivo individualmente, por meio dos passos a seguir:</p>
+          <ol>
+            <li>Acesse o FTP.</li>
+            <li>Encontre o diretório raiz onde instalou e faz uso do WordPress.</li>
+            <li>Localize a pasta wp-content/plugins.</li>
+            <li>Renomeie a pasta inteira novamente para plugins.</li>
+            <li>Restrinja plugin por plugin da mesma forma, por meio da alteração do nome da pasta.</li>
+            <li>Sempre que fizer isso, teste o site.</li>
+          </ol>
+          <p>O plugin que causou o erro deve ser deletado. Se o problema não resolveu com essa ação, provavelmente diz respeito aos temas. Vá para os diretórios wp-content/themes e renomeie-os. Verifique se você consegue abrir o painel de administração do WordPress agora.</p>
+          <h3>Erro de upload de imagem no WordPress</h3>
+          <p>Caso você tenha problemas para <strong>realizar o upload de imagens em seu site ou blog do WordPress</strong>, uma possível solução envolve o acesso ao FTP. Isso ocorre porque uma das causas
+            <ol>
+              <li>Acesse a pasta "wp-content" do WordPress no diretório raiz.</li>
+              <li>Procure pela pasta "uploads".</li>
+              <li>Abra as configurações de permissões dessa pasta.</li>
+              <li>Redefina as permissões para a pasta "uploads" e seus subdiretórios para 744.</li>
+              <li>Ative a opção "recurse" para aplicar a alteração a todas as pastas simultaneamente.</li>
+              <li>Defina as permissões para os arquivos na pasta "uploads" para 644.</li>
+              <li>Ative a opção "recurse" em subdiretórios.</li>
+            </ol>
+            <p>Depois de aplicar todas as alterações, volte ao painel de administração e tente enviar uma imagem para uma postagem novamente.</p>
+            <p>Como você pode ver, o FTP também é uma opção ao painel administrativo em caso de erros, principalmente se esse problema inviabiliza o acesso à interface principal.</p>
+            <p><strong>Você pode usar o FTP por meio do SFTP do Stage</strong>, uma ferramenta exclusivamente desenvolvida para ajudar a gerenciar todos os processos que envolvem arquivos e diretórios de um site. O primeiro passo para acessar a ferramenta é obter as credenciais por meio do Stage e configurar um dos softwares citados neste artigo.</p>
+        </div>
+
+
+    </main>
+    <footer>
+      <p>&copy; 2023 Solon Wiki. Todos os direitos reservados.</p>
+    </footer>
+    <a href="#" id="backToTopBtn">
+      <img src="../icons/up-button-icon.png" alt="Botão de Retorno ao Topo">
+  </a>
+  </body>
+</html>
+  
