@@ -38,20 +38,20 @@
 header {
     background-color: var(--reader);
     max-width: 600x;
-    padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 7px 7px 15px var(--readershadow);
+    padding: 0.3125em;
+    margin-bottom: 1.25em;
+    border-radius: 0.625em;
+    box-shadow: 0.4375em 0.4375em 0.9375em var(--readershadow);
 }
 .dark-mode header{
-    box-shadow: 5px 5px 15px var(--readershadowdark);
+    box-shadow: 0.3125em 0.3125em 0.9375em var(--readershadowdark);
 }
 
 header img {
-    margin-left: 5%;
+    margin-left: 0.3125em;
 }
 
 nav ul {
@@ -64,23 +64,23 @@ nav ul {
 nav ul li a {
     color: var(--readercolorlink);
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 0.9375em;
     font-size: 1.25em;
     font-weight: bold;
 }
 
 nav ul li:hover{
-    transform:scale(1.05);
+    transform: scale(1.05);
 }
 nav img{
-    margin-left: 15px;
+    margin-left: 0.9375em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
     nav ul li a {
       font-size: 1em;
     }
-}
+  }
 
 /*========== Menu ==========*/
 .dropdown {
@@ -88,12 +88,12 @@ nav img{
 }
 
 .dropdown-content {
-    padding: 12px;
+    padding: 0.75em;
     display: none;
     position: absolute;
     background-color: var(--dropdown);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 1.10em;
+    box-shadow: 0.625em 0.625em 1.25em 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
     right: 0; /* Alterado para a direita */
     text-align: right;
@@ -104,7 +104,7 @@ nav img{
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 12px 16px;
+    padding: 0.75em 1em;
     background-color: var(--dropdownbutton);
     border: none;
     text-align: left;
@@ -146,19 +146,26 @@ body.dark-mode {
 
 main {
     background-color: var(--main);
-    padding: 30px;
+    padding: 1.875em;
     margin: auto;
-    max-width: 1000px;
-    min-width: 280px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 25px var(--mainshadow);
+    max-width: 62.5em;
+    min-width: 17.5em;
+    border-radius: 0.625em;
+    box-shadow: 0 0 1.5625em var(--mainshadow);
     font-size: 1.125em;
     color: var(--maincolor);
     text-align: justify;
 }
+
+@media (max-width: 600px) {
+    main {
+      font-size: 1em;
+    }
+}
+
 .dark-mode main{
     background-color: var(--maindark);
-    box-shadow: 5px 5px 15px var(--mainshadowdark);
+    box-shadow: 0.3125em 0.3125em 0.9375em var(--mainshadowdark);
 }
 
 main a {
@@ -173,16 +180,22 @@ main a:hover{
 
 h2 {
     font-family: 'manrope', sans-serif;
-    font-weight: 500;
+    font-weight: 1.8em;
     font-size: 1.8em;
-    line-height: 44px;
+    line-height: 2.75em;
+}
+
+@media (max-width: 600px) {
+    h2 {
+      font-size: 1.6em;
+    }
 }
 
 h3 {
     font-size: 1.2em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
     main {
       font-size: 1em;
     };
@@ -203,39 +216,39 @@ abbr{
 
 .tags {
   background: var(--tags);
-  padding: 5px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px var(--tagsshadow);
+  padding: 0.3125em;
+  border-radius: 0.625em;
+  box-shadow: 0.3125em 0.3125em 0.9375em var(--tagsshadow);
 }
 
 .dark-mode .dark-mode-tags {
   background: var(--tagsdark); /* Cor de fundo no modo escuro */
   border-radius: 10px;
-  box-shadow: 5px 5px 15px var(--tagsshadowdark);
+  box-shadow: 0.3125em 0.3125em 0.9375em var(--tagsshadowdark);
 }
 
 /*========== Up Button ==========*/
 #backToTopBtn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
+    bottom: 1.25em;
+    right: 1.25em;
+    width: 3.125em;
+    height: 3.125em;
     background-color: transparent;
     border-radius: 50%;
     border: none;
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.3s ease;
-  }
+}
   
   #backToTopBtn.show {
     opacity: 1;
-  }  
+}  
 
   #backToTopBtn :hover{
     transform: scale(1.2);
-  }
+}
   
 /*=========== Imagens ===========*/
 .image-container {
@@ -252,10 +265,10 @@ abbr{
 
 .imagem {
     border-style: none;
-    border-radius: 10px;
+    border-radius: 0.625em;
     max-width: 100%;
-    margin-bottom: 5px;
-    box-shadow: 5px 5px 15px #757575;
+    margin-bottom: 0.3125em;
+    box-shadow: 0.3125em 0.3125em 0.9375em #757575;
 }
 
 .dark-mode .imagem{
@@ -264,7 +277,7 @@ abbr{
 
 .logo{
     max-width: 100%;
-    min-width: 125px;
-    margin-right: 10px;
-    margin-left: 15px;
+    min-width: 7.8125em;
+    margin-right: 0.625em;
+    margin-left: 0.9375em;
 }
