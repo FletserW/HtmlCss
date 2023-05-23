@@ -22,43 +22,12 @@
                         <div class="dropdown-content">
                             <button id="darkModeBtn" class="dropbtn">
                                 <img src="icons/light-mode.png" alt="Botão Dark"> <span class="button-text">Alterar modo</span>
-                            </button>                                                         
+                            </button>               
                         </div>
                     </li>
                 </ul>
             </nav>
-            <style>            
-                .image-grid {
-                    display: flex;
-                    justify-content: space-between;
-                    margin-top: 20px;
-                }
-
-                .image-item {
-                    text-align: center;
-                    transition: transform 0.3s ease-in-out;
-                }
-
-                .image-item:hover {
-                    transform: scale(1.05);
-                }
-
-                .image-item img {
-                    width: 100%;
-                    max-width: 300px;
-                    height: auto;
-                }
-
-                .image-text {
-                    background-color: #FF6428;
-                    padding: 20px;
-                    font-size: 18px;
-                    color: #333;
-                    margin-top: 10px;
-                }
-            </style>
         </header>
-    
         <script>
             function toggleDarkMode() {
             var body = document.body;
@@ -126,55 +95,16 @@
             backToTopBtn.addEventListener("click", scrollToTop);
 
         </script>   
-
         <main>
-            <section id="introducao">
-                <h2 style="text-align: center";>Bem-vindo ao Solon Wiki</h2>
-                <p>Seu guia completo sobre tecnologia e inovação.</p>
-                <p>Explore nossos artigos e descubra informações valiosas sobre os mais diversos temas relacionados à tecnologia, desde tutoriais e guias até as últimas novidades e tendências.</p>
-                <p>Junte-se a nós e compartilhe conhecimento, aprenda e descubra o mundo da tecnologia em constante evolução.</p>
-            </section>
-            <section id="popularity-pages">
-                <h2>Veja as Paginas mais visitadas</h2>
-                <div class="image-grid">
-                    <div class="image-item">
-                        <a href="filezille/filezille.html">
-                            <img src="filezille/filezille_logo.png" alt="Imagem 1">
-                            <div class="image-text">FileZilla</div>
-                        </a>
-                    </div>
-                    <div class="image-item">
-                        <a href="ftp/FTP.html">
-                            <img src="ftp/FTP_logo.png" alt="Imagem 2">
-                            <div class="image-text">Protocolo FTP</div>
-                        </a>
-                    </div>
-                    <div class="image-item">
-                        <a href="wordpress/wordpress.html">
-                            <img src="wordpress/wordpress_logo.png" alt="Imagem 3">
-                            <div class="image-text">wordpress</div>
-                        </a>
-                    </div>
-                    <div class="image-item">
-                        <a href="pagina4.html">
-                            <img src="test.png" alt="Imagem 4">
-                            <div class="image-text">Descrição da imagem 4</div>
-                        </a>
-                    </div>
-                    <div class="image-item">
-                        <a href="pagina5.html">
-                            <img src="test.png" alt="Imagem 5">
-                            <div class="image-text">Descrição da imagem 5</div>
-                        </a>
-                    </div>
-                </div>
-            </section>
+            <h1>Meu primeiro formulario</h1>
+            <form>
+                <p><label for="nome">Nome:</label> 
+                    <input type="text" name="nome" id="nome"></p>
+                <p><label for="sobrenome">Sobrenome:</label> 
+                    <input type="text" name="sobrenome" id="sobrenome"></p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </form>
         </main>
-        <footer>
-            <p>&copy; 2023 Solon Wiki. Todos os direitos reservados.</p>
-        </footer>
-        <a href="#" id="backToTopBtn">
-            <img src="icons/up-button-icon.png" alt="Botão de Retorno ao Topo">
-        </a>
     </body>
 </html>
