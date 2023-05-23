@@ -38,3 +38,17 @@ iframe#tela {
     width: 270px;
     height: 471px;
 }
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    transform: scale(1.2);
+    border: 2px solid rgba(255, 255, 255, 0.514);
+    transition: .2;
+}
