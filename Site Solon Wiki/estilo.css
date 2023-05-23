@@ -142,7 +142,7 @@ main {
     background-color: var(--main);
     padding: 1.875em;
     margin: auto;
-    max-width: 62.5em;
+    max-width: 58em;
     min-width: 17.5em;
     border-radius: 0.625em;
     box-shadow: 0 0 1.5625em var(--mainshadow);
@@ -169,7 +169,7 @@ main a:hover{
 h2 {
     font-family: 'manrope', sans-serif;
     font-weight: 1.8em;
-    font-size: 1.8em;
+    font-size: 1.6em;
     line-height: 1.2em;
 }
 
