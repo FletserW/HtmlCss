@@ -193,6 +193,11 @@ abbr{
   box-shadow: 0.3125em 0.3125em 0.9375em var(--tagsshadow);
 }
 
+div.social-icons img {
+    border-radius: 50%;
+    width: 50px;
+}
+
 .dark-mode .dark-mode-tags {
   background: var(--tagsdark); /* Cor de fundo no modo escuro */
   border-radius: 10px;

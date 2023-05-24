@@ -96,15 +96,46 @@
 
         </script>   
         <main>
-            <h1>Meu primeiro formulario</h1>
-            <form>
-                <p><label for="nome">Nome:</label> 
-                    <input type="text" name="nome" id="nome"></p>
-                <p><label for="sobrenome">Sobrenome:</label> 
-                    <input type="text" name="sobrenome" id="sobrenome"></p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-            </form>
+            <section id="contact" class="contact-section">
+                <div class="container">
+                    <h2 class="section-heading">Entre em Contato</h2>
+                    <p class="section-subheading">Preencha o formulário abaixo para entrar em contato conosco.</p>
+                    <div class="row">
+                    <div class="col-md-6">
+                        <form id="contactForm" method="post" action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Seu Nome *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Seu E-mail *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto *" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="message" name="message" placeholder="Sua Mensagem *" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+                        <p><i class="fa fa-envelope"></i> <a href="mailto:contato@seusite.com">contato@seusite.com</a></p>
+                        <p><i class="fa fa-phone"></i> (99) 1234-5678</p>
+                        <p><i class="fa fa-map-marker"></i> Rua Exemplo, 1234 - Cidade, Estado</p>
+                        <div class="social-icons">
+                            <a href="#" target="_blank"><img src="icons/logo-facebook.jpg" alt=""><i class="fa fa-facebook"></i></a>
+                            <a href="#" target="_blank"><img src="icons/logo-twitter.jpg" alt=""><i class="fa fa-twitter"></i></a>
+                            <a href="#" target="_blank"><img src="icons/logo-instagram.jpg" alt=""><i class="fa fa-instagram"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>
