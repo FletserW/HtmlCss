@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solon Wiki</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/logo_255.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../script/standard.js" media="all">
+</head>
+<style>
+    .container-artigos {
+        width: 100%;
+        display: flex;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.212);
+        border-radius: 10px;
+    }
+
+    /* ===== Imagem a esquerda =====*/
+    #svg {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to top, #8bc53a 0%, #5d910a 100%);
+        padding: 10px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    #svg img {
+        max-width: 500px;
+        min-width: 300px;
+    }
+
+    #intro {
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        border-radius: 0 10px 10px 0;
+        padding: 15px;
+    }
+
+    #feature-content {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        min-width: none;
+    }
+
+    .visual {
+        height: 100%;
+        width: 92%;
+        background: transparent;
+        margin: 0.5rem 0;
+    }
+
+    .visual img {
+        max-width: 100%;
+        min-width: 70px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        /* 026 Saint Petersburg */
+        margin-top: 20px;
+        border-radius: 10px;
+        padding: 1rem;
+
+    }
+
+    .card:hover {
+        transform: scale(1.03);
+        transition: 0.5s;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.452);
+        cursor: pointer;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: rgb(54, 54, 54);
+        display: contents;
+    }
+
+    .card a:hover {
+        color: black;
+    }
+
+    @media screen and (max-width: 730px) {
+        .container-artigos {
+            display: block;
+            background-color: pink;
+            border-radius: 10px;
+        }
+
+        #svg {
+            width: 96.5%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        #intro {
+            padding: 50px;
+            border-radius: 0 0 10px 10px;
+            text-justify: inherit;
+        }
+
+        div.card p {
+            display: none;
+        }
+
+        div.card h1 {
+            font-size: medium;
+        }
+    }
+
+</style>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="index.html"><img src="../img/logo_255.jpg" alt="Logo do site"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="assets/artigos/artigos.html" class="nav-link">Artigos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Contato</a></li>
+                </ul>
+            </div>
+
+            <section id="options">
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="assents/img/menu-toggle-icon.png" alt=""></button>
+                </div>
+            </section>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="assets/artigos/artigos.html" class="nav-link">Artigos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="container-artigos">
+            <div id="svg"><img src="../img/svg-pizza.svg" alt=""></div>
+            <div id="intro">
+                <p>Bem-vindo(a) à nossa página de pizzas salgadas! Aqui você encontrará uma variedade de sabores deliciosos, desde as tradicionais até opções inovadoras. </p>
+                <p>Nossas pizzas são preparadas com ingredientes frescos e de alta qualidade, criando uma experiência gastronômica única. Explore nosso cardápio e apaixone-se pelas nossas pizzas artesanais. Aproveite!</p>
+            </div>
+        </section>
+        <section id="feature-content">
+            <div class="card">
+                    <h1>Alho e Óleo</h1>
+                    <div class="visual"><img src="../img/Salgadas/alho-oleo.jpg" alt=""></div>
+                    <p>Mussarela, alho e óleo</p>
+            </div>
+            <div class="card">
+                <a href="../assets/artigos/ftp/FTP.html">
+                    <h1>FTP</h1>
+                    <div class="visual"><img src="../artigos/ftp/FTP_logo.png" alt=""></div>
+                    <p> Protocolo seguro para transferência de arquivos entre dispositivos via internet, essencial para
+                        gerenciar sites, realizar uploads e downloads de forma eficiente.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="../artigos/wordpress/">
+                    <h1>Wordpress</h1>
+                    <div class="visual"><img src="../artigos/wordpress/wordpress_logo.png" alt=""></div>
+                    <p>Plataforma de criação de sites e blogs de código aberto, com recursos flexíveis e uma grande
+                        variedade de temas e plugins para personalização.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <h1>Em breve</h1>
+                    <div class="visual"><img src="../../images/test.png" alt=""></div>
+                    <p> ...</p>
+                </a>
+            </div>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <h1>Em breve</h1>
+                    <div class="visual"><img src="../../images/test.png" alt=""></div>
+                    <p> ...</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <h1>Em breve</h1>
+                    <div class="visual"><img src="../../images/test.png" alt=""></div>
+                    <p> ...</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <h1>Em breve</h1>
+                    <div class="visual"><img src="../../images/test.png" alt=""></div>
+                    <p> ...</p>
+                </a>
+            </div>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <h1>Em breve</h1>
+                    <div class="visual"><img src="../../images/test.png" alt=""></div>
+                    <p> ...</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <h1>Em breve</h1>
+                    <div class="visual"><img src="../../images/test.png" alt=""></div>
+                    <p> ...</p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h3>Social</h3>
+
+                <div id="footer_social_media">
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    <a href="https://www.facebook.com/ditalia.pizzaria.9" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://api.whatsapp.com/send?phone=555198183536 " class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Navegação</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="assets/artigos/artigos.html" class="footer-link">Artigos</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Products</h3>
+                </li>
+                <li>
+                    <a href="https://play.google.com/store/apps/details?id=br.com.lexsis.ditalia" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="https://delivery.lexsis.com.br/ditalia/" class="footer-link">Desktop</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 all rights reserved
+        </div>
+    </footer>
+    <script src="assets/scripts/standard.js"></script>
+</body>
+</html>
