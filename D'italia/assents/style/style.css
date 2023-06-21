@@ -4,8 +4,8 @@
     /*===================== COLOR ======================*/
 
     /*=====Reader=====*/
-    --reader: #3c5c0b;
-    --readercolorlink: #FF6428;
+    --reader: #333;
+    --readercolorlink: green;
     --readershadow: #888;
     --readershadowdark: #292929;
     /*=====Menu=====*/
