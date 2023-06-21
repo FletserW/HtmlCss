@@ -1,0 +1,110 @@
+Alho e Óleo
+( mussarela, alho e óleo)	
+Al Pesto
+( mussarela, alho em azeite de oliva mangericão e nozes)	
+Al Pizzaiollo
+(mussarela, presunto, champignon, tomate seco, catupiry)	
+Atum
+(mussarela, atum)	
+Bacon
+(mussarela, bacon)	
+Basca
+(mussarela, tomate, bacon, parmesão, catupiry)	
+Beringela
+(mussarela, beringela, cebola, azeitonas)	
+Bicuira
+(mussarela, atum, palmito e catupiry)	
+Brócolis
+(mussarela, brócolis)	
+Brócolis ao Catupiry
+(mussarela, catupiry)	
+Brócolis com Bacon
+(mussarela, bacon)	
+Calabresa
+(mussarela, calabresa)	
+Calabresa a Moda da Casa
+(mussarela, calabresa, tomate, ovos)	
+Carbonara
+(mussarela, bacon, ovos, parmesão, tempero verde)	
+Cebola na Manteiga
+(mussarela, cebola na manteiga)	
+Champignon com palmito
+(mussarela, champignon, palmito)	
+Champignon
+(mussarela, champignon)	
+Chester
+(mussarela, chester)	
+Cinco Queijos
+(mussarela, gorgonzola, parmesão, cheddar, catupiry)	
+Cinco Queijos com tomates secos
+(mussarela, gorgonzola, parmesão, cheddar, catupiry e tomates secos)	
+Cinco Queijos c/cebola na manteiga
+(mussarela, cebola, gorgonzola, parmesão, cheddar, catupiry)	
+Cleópatra
+(mussarela, chester, nozes, catupiry)	
+Coração
+(mussarela, coração)	
+Coração ao Alho e Óleo
+(mussarela, coração, alho)	
+Coração ao Catupiry
+(mussarela, coração, catupiry)	
+Coração com Bacon
+(mussarela, coração, bacon)	
+Fornalha
+(mussarela, calabresa, cebola, salsinha, azeitonas)	
+Frango
+(mussarela, frango)	
+Frango a Catupiry
+(mussarela, frango a catupiry)	
+Frango com Bacon
+(mussarela, frango, bacon)	
+Havaiana
+(mussarela, lombo canadense, abacaxi)	
+Lombinho
+(mussarela, lombinho de porco assado)	
+Lombo
+(mussarela, lombo canadense)	
+Lombo ao Catupiry
+(mussarela, lombo canadense catupiry)	
+Marguerita
+(mussarela, tomates, manjericão)	
+Mafiosa
+(mussarela, beringela, calabresa, cebola, pimentão, azeitonas)	
+Milho
+(mussarela, milho)	
+Milho ao Catupiry
+(mussarela, milho, catupiry)	
+Milho com Bacon
+(mussarela, milho, bacon)	
+Mista
+(mussarela, calabresa, bacon, presunto, lombo, alho, azeitonas)	
+Mussarela
+(mussarela, tomates)	
+Napolitana
+(mussarela, presunto, tomate, parmesão, catupiry)	
+Palmito
+(mussarela, palmito)	
+Portuguesa
+(mussarela, presunto, cebola, tomate, pimentão, azeitonas, ovos)	
+Presunto
+(mussarela, presunto)	
+Rúcula
+(mussarela, rúcula, tomate seco, azeitonas)	
+Seis Queijos
+(mussarela, gorgonzola, parmesão, cheddar, provolone, catupiry)	
+Speciale
+(mussarela, mangericão, tomate seco, champignon, azeitonas)	
+Strogonoff
+(mussarela, strogonoff)	
+Strogonoff c/ batata palha
+(mussarela, strogonoff de carne, batata palha)	
+Strogonoff de frango
+(mussarela, strogonoff de frango)	
+Suprema
+(mussarela, calabresa, champignon, cebola, pimentão, azeitonas)	
+Toscaneza
+(mussarela, calabresa, cebola, pimentão, azeitonas)	
+Vegetariana
+(mussarela, brócolis, palmito, milho, catupiry)	
+Quatro Queijos
+(mussarela, gorgonzola, parmesão, catupiry)
