@@ -6,12 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D'italia</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assents/style/style.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <script src="assents/script/standard.js"></script>
 </head>
+<style>
+    #overlay {
+        position: fixed;
+        top: 0;
+        /*Para oculpar desde o inicio do site*/
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /*Sombreamento de fundo*/
+        display: none;
+        /*Desativar sombreamento*/
+        z-index: 2;
+        /* Sobreposição do itens (Quanto maior o numero mais a frente)*/
+    }
+
+    #popup {
+        position: fixed;
+        /*Torna a posição fixa em relalão ao site como todo*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /*para centralizar*/
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        display: none;
+        z-index: 3;
+        /* Sobreposição do itens*/
+        text-align: center;
+    }
+
+    #popup img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    #close-btn {
+        margin-top: 10px;
+    }
+
+    button#close-btn {
+        padding: 1.3em 3em;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #000;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.158);
+        transition: all 0.3s ease 0s; /*Cria uma transição suave, com uma leve aceleração por causa do "ease"*/
+        cursor: pointer;
+    }
+
+    button#close-btn:hover {
+        background-color: #23c483;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px); /*Move o botão 7px para cima*/
+    }
+
+    button#close-btn:active {
+        transform: translateY(-1px);
+    }
+</style>
 
 <body>
     <header>
@@ -30,14 +99,14 @@
                 </ul>
             </div>
             <section id="options">
-                <div class="mobile-menu-icon">
-                    <button onclick="menuShow()">
+                <div class="mobile-menu-icon"> <!-- container onde se encontra o botão do menu -->
+                    <button onclick="menuShow()"> <!-- Ativa a função responsavel por ativar o menu por meio do display block -->
                         <img class="icon" src="assents/img/menu-toggle-icon.png" alt="">
                     </button>
                 </div>
             </section>
         </nav>
-        <div class="mobile-menu">
+        <div class="mobile-menu"> <!-- Menu do modo mobile -->
             <ul>
                 <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
@@ -46,10 +115,13 @@
             </ul>
         </div>
     </header>
+    <div id="overlay"></div> <!-- Sombreamento em volta do popup de bem vindo -->
+    <div id="popup"><!-- Parte branca do popup -->
+        <img src="assents/img/Bem-Vindo.png" alt="Boas-vindas"><br> 
+        <button id="close-btn">Fechar</button>
+    </div>
     <main>
         <section id="introducao">
-            <h1 style="text-align: center">Bem-vindo ao nosso estabelecimento</h1>
-            <p style="text-align: center; margin-bottom: 0.7rem;"><strong>Sua utopia gastronômica.</strong></p>
             <div class="image-container">
                 <img src="assents/img/D'italia.png" alt="Banner" class="imagem">
             </div>
@@ -110,7 +182,8 @@
                     <h3>Produtos</h3>
                 </li>
                 <li>
-                    <a href="https://play.google.com/store/apps/details?id=br.com.lexsis.ditalia" class="footer-link">App</a>
+                    <a href="https://play.google.com/store/apps/details?id=br.com.lexsis.ditalia"
+                        class="footer-link">App</a>
                 </li>
                 <li>
                     <a href="https://delivery.lexsis.com.br/ditalia/" class="footer-link">Desktop</a>
