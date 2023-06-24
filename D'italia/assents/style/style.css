@@ -135,10 +135,14 @@ main a:hover{ /*Aciona um determido estilo quando o mouse passa por cima*/
 
 h1 {
     margin-bottom: 15px;
+    font-size: clamp(5px,3vw,30px);
 }
 
 h2 {
     padding: 20px 0;
+    font-weight: 600px;
+    font-size: 30px;
+    margin-top: 30px;
 }
 
 p {
@@ -191,12 +195,6 @@ p {
 
 .card a:hover {
     color: black;
-}
-
-h2 {
-    font-weight: 600px;
-    font-size: 30px;
-    margin-top: 30px;
 }
 
 .title {
