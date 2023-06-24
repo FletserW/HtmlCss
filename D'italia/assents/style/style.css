@@ -39,7 +39,7 @@
 
 }
 
-* {
+* { /* Zera a margens e bordas tornando mais facil a manipolação dos itens */
     margin: 0px;
     padding: 0px;
     font-family: "Roboto", sans-serif;
@@ -144,7 +144,7 @@ h2 {
 p {
     text-align: justify;
     padding: 10px 0;
-    font-size: clamp(16px,5vw,20px);
+    font-size: clamp(15px,4vw,20px);
 }
 
 #feature-content { /*Classe para os conteudos em desataque*/

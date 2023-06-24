@@ -4,10 +4,10 @@ function menuShow() {
 
   if (menuMobile.classList.contains('open')) {
     menuMobile.classList.remove('open');
-    icon.src = "..\img\menu-toggle-icon.png";
+    icon.src = "assents/img/menu-toggle-icon.png";
   } else {
     menuMobile.classList.add('open');
-    icon.src = "\img\Cross-Icon.png";
+    icon.src = "assents/img/Cross-Icon.png";
   }
 }
 
