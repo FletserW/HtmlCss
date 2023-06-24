@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'italia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/logo_255.jpg" type="image/x-icon">
+    <script src="../script/standard.js"></script>
+</head>
+<style>
+    .container-artigos {
+        width: 100%;
+        display: flex;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.212);
+        border-radius: 10px;
+    }
+
+    /* ===== Imagem a esquerda =====*/
+    #svg {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to top, #8bc53a 0%, #5d910a 100%);
+        padding: 10px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    #svg img {
+        max-width: 500px;
+        min-width: 300px;
+    }
+
+    #intro {
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        border-radius: 0 10px 10px 0;
+        padding: 15px;
+    }
+
+    #feature-content {
+        display: grid; /*Divide o bloco em colunas*/
+        grid-gap: 1rem; /*Determina o tamanho da coluna*/
+        grid-template-columns: repeat(3, 1fr); /*Quantidade de colunas*/
+        min-width: none;
+    }
+
+    .visual {
+        height: 100%;
+        width: 100%;
+        background: transparent;
+    }
+
+    .visual img {
+        max-width: 100%;
+        min-width: 60px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column; /*Alinha itens na vertical*/
+        justify-content: space-between; /*Alinha os intens do bloco com espaçamentos iguais*/
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);/* 026 Saint Petersburg */
+        margin-top: 20  px;
+        border-radius: 10px;
+    }
+
+    .card:hover {
+        transform: scale(1.03);
+        transition: 0.5s;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.452);
+        cursor: pointer; /*Cursor fica em forma de item clicavel*/
+    }
+
+    .card ul {
+        padding-left: 20px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    @media screen and (max-width: 730px) { /* Se telas forem menores que 730px*/
+        .container-artigos {
+            display: block;
+            background-color: pink;
+            border-radius: 10px;
+        }
+
+        #svg {
+            width: 96.5%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        #intro {
+            padding: 50px;
+            border-radius: 0 0 10px 10px;
+            text-justify: inherit;
+        }
+
+        .card ul { /*Ira escoder a lista de ingredientes*/
+            display: none;
+        }
+    }
+
+</style>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="../../index.html"><img src="../img/logo_255.jpg" alt="Logo do site"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="../../index.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="../pages/cardapio.html" class="nav-link"> Cardapio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Contato</a></li>
+                </ul>
+            </div>
+
+            <section id="options">
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="../img/menu-toggle-icon.png" alt=""></button>
+                </div>
+            </section>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="../../index.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="../pages/cardapio.html" class="nav-link"> Cardapio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="container-artigos">
+            <div id="svg"><img src="../img/cardapio.svg" alt=""></div>
+            <div id="intro">
+                <p>Bem-vindo à página de cardápio da D'Italia, uma pizzaria que oferece uma ampla variedade de opções gastronômicas. Além das pizzas artesanais, temos massas, petiscos, peixes, saladas e sobremesas deliciosas. </p>
+                <p>Nossos pratos são preparados com ingredientes de qualidade e cuidado nos detalhes. Faça seu pedido online ou visite-nos para desfrutar de uma experiência gastronômica completa na D'Italia Pizzaria.    </p>
+            </div>
+        </section>
+        <h2>Cardapio</h2>
+        <section id="feature-content">
+            <div class="card">
+                <a href="salgado.html">
+                    <div class="visual"><img src="../img/pizza-salgada.png" alt=""></div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="doce.html">
+                    <div class="visual"><img src="../img/doces.png" alt=""></div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="especial.html">
+                    <div class="visual"><img src="../img/especalidades_2.png" alt=""></div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="petiscos.html">
+                    <div class="visual"><img src="../img/petiscos.png" alt=""></div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="carnes.html">
+                    <div class="visual"><img src="../img/carnes-1.png" alt=""></div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="massas.html">
+                    <div class="visual"><img src="../img/massas-1.png" alt=""></div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="frango.html">
+                    <div class="visual"><img src="../img/frango.png" alt=""></div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="peixe.html">
+                    <div class="visual"><img src="../img/peixe-1.png" alt=""></div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="saladas.html">
+                    <div class="visual"><img src="../img/saladas.png" alt=""></div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="sobremesas.html">
+                    <div class="visual"><img src="../img/sobremesa.png" alt=""></div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h3>Social</h3>
+
+                <div id="footer_social_media">
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    <a href="https://www.facebook.com/ditalia.pizzaria.9" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://api.whatsapp.com/send?phone=555198183536 " class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Navegação</h3>
+                </li>
+                <li>
+                    <a href="../../index.html" class="footer-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="../pages/cardapio.html" class="footer-link">Cardapio</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Products</h3>
+                </li>
+                <li>
+                    <a href="https://play.google.com/store/apps/details?id=br.com.lexsis.ditalia" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="https://delivery.lexsis.com.br/ditalia/" class="footer-link">Desktop</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 all rights reserved
+        </div>
+    </footer>
+    <script src="assets/scripts/standard.js"></script>
+</body>
+</html>
