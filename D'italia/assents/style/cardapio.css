@@ -1,0 +1,94 @@
+.container-artigos {
+    width: 100%;
+    display: flex;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.212);
+    border-radius: 10px;
+}
+
+/* ===== Imagem a esquerda =====*/
+#svg {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #8bc53a 0%, #5d910a 100%);
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+#svg img {
+    max-width: 500px;
+    min-width: 300px;
+}
+
+#intro {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border-radius: 0 10px 10px 0;
+    padding: 15px;
+}
+
+#feature-content {
+    display: grid; /*Divide o bloco em colunas*/
+    grid-gap: 1rem; /*Determina o tamanho da coluna*/
+    grid-template-columns: repeat(3, 1fr); /*Quantidade de colunas*/
+    min-width: none;
+}
+
+.visual {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+}
+
+.visual img {
+    max-width: 100%;
+    min-width: 60px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /*Alinha itens na vertical*/
+    justify-content: space-between; /*Alinha os intens do bloco com espaçamentos iguais*/
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);/* 026 Saint Petersburg */
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.452);
+    cursor: pointer; /*Cursor fica em forma de item clicavel*/
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 730px) { /* Se telas forem menores que 730px*/
+    .container-artigos {
+        display: block;
+        background-color: pink;
+        border-radius: 10px;
+    }
+
+    #svg {
+        width: 96.5%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    #intro {
+        padding: 50px;
+        border-radius: 0 0 10px 10px;
+        text-justify: inherit;
+    }
+
+    .card  {
+        padding: 0.5rem;
+    }
+
+    .card ul { /*Ira escoder a lista de ingredientes*/
+        display: none;
+    }
+}
