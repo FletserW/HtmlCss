@@ -26,7 +26,7 @@ window.addEventListener('load', function() { //Execulta a função ao iniciar o 
 });
 
 
-function instagram() {
-  window.alert('Me desculpe, link quebrado no momento');
+function enviar() {
+  window.alert('Envio realizado com sucesso!');
 }
 

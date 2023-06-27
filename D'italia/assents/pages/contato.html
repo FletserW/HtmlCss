@@ -36,6 +36,8 @@
     border-radius: 10px;
 }
 
+h1 {font-size: 30px;}
+
 /* ===== Formulario =====*/
 
 .input-group {
@@ -64,18 +66,10 @@
     background-color: #eeeeee75;
 }
 
-.input-box input:focus-visible {
-    outline: 1px solid #6c63ff;
-}
-
 .input-box label {
     font-size: 0.75rem;
     font-weight: 600;
     color: #000000c0;
-}
-
-.input-box input::placeholder {
-    color: #000000be;
 }
 
 /* ===== Confirmar cadastro =====*/
@@ -99,23 +93,8 @@
 
 /* ===== Medias screens =====*/
 
-@media screen and (max-width: 1300px) { /* Media */
-    
-    .form{
-        border-radius: 10px;
-    }
-    .container {
-        width: 50%;
-    }
-}
-
 @media screen and (max-width: 1064px) { /* Pequena */
-    .container {
-        height: auto;
-    }
-    .form{
-        border-radius: 10px;
-    }
+
     .input-group {
         flex-direction: column;
         z-index: 5; /* Sobreposição */
@@ -190,7 +169,7 @@
                     </div>
                 </div>                
                 <div class="continue-button">
-                    <button type="submit">Enviar</button>
+                    <button type="submit" onclick="enviar()">Enviar</button>
                 </div>
             </form>
         </div>
