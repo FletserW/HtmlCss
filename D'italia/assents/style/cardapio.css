@@ -66,6 +66,38 @@
     padding-left: 20px;
 }
 
+#pedir{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ #buy {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.158);
+    transition: all 0.3s ease 0s; /*Cria uma transição suave, com uma leve aceleração por causa do "ease"*/
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#buy:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px); /*Move o botão 7px para cima*/
+}
+
+#buy:active {
+    transform: translateY(-1px);
+}
+
 @media screen and (max-width: 730px) { /* Se telas forem menores que 730px*/
     .container-artigos {
         display: block;
