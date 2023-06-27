@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'italia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/cardapio.css">
+    <link rel="shortcut icon" href="../img/logo_255.jpg" type="image/x-icon">
+    <script src="../script/standard.js"></script>
+</head>
+<style>
+
+/* ===== Formulario todo =====*/
+.container {
+    display: flex;
+    margin:  10px auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form {
+    margin: auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+/* ===== Formulario =====*/
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap; /*Permite quebra de linha*/
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+/* ===== Confirmar cadastro =====*/
+
+.continue-button button {
+    width: 100%;
+    color: white;
+    font-size: 17px;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: green;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: darkgreen;
+}
+
+
+/* ===== Medias screens =====*/
+
+@media screen and (max-width: 1300px) { /* Media */
+    
+    .form{
+        border-radius: 10px;
+    }
+    .container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1064px) { /* Pequena */
+    .container {
+        height: auto;
+    }
+    .form{
+        border-radius: 10px;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5; /* Sobreposição */
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll; /*Adiciona rolamento */
+        flex-wrap: nowrap; /* Não permite quebra de linha */
+    }
+    
+}
+</style>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="../../index.html"><img src="../img/logo_255.jpg" alt="Logo do site"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="../../index.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="cardapio.html" class="nav-link"> Cardapio</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link"> Contato</a></li>
+                </ul>
+            </div>
+
+            <section id="options">
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="../img/menu-toggle-icon.png" alt=""></button>
+                </div>
+            </section>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="../../index.html" class="nav-link">Cardapio</a></li>
+                <li class="nav-item"><a href="cardapio.html" class="nav-link"> Sobre</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link"> Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="form">
+            <form action="#">
+                    <div class="title">
+                        <h1>Contato</h1>
+                    </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+                    <br>
+                    <div class="input-box" style="width: 100%;">
+                        <label for="comment">Comentario</label>
+                        <input id="comment" type="text" name="comment" placeholder="Deixe seu comentario" >
+                    </div>
+                </div>                
+                <div class="continue-button">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h3>Social</h3>
+
+            <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                <a href="https://www.facebook.com/ditalia.pizzaria.9" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://api.whatsapp.com/send?phone=555198183536 " class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <ul class="footer-list">
+            <li>
+                <h3>Navegação</h3>
+            </li>
+            <li>
+                <a href="../../index.html" class="footer-link">Sobre</a>
+            </li>
+            <li>
+                <a href="cardapio.html" class="footer-link">Cardapio</a>
+            </li>
+            <li>
+                <a href="contato.html" class="footer-link">Contato</a>
+            </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Produtos</h3>
+            </li>
+            <li>
+                <a href="https://play.google.com/store/apps/details?id=br.com.lexsis.ditalia" class="footer-link">App</a>
+            </li>
+            <li>
+                <a href="https://delivery.lexsis.com.br/ditalia/" class="footer-link">Desktop</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="footer_copyright">
+        &#169
+        2023 all rights reserved
+    </div>
+</footer>
+</body>
+</html>

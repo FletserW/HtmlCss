@@ -68,8 +68,9 @@
 
 #pedir{
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
 }
 
  #buy {
@@ -120,7 +121,7 @@
         padding: 0.5rem;
     }
 
-    .card ul { /*Ira escoder a lista de ingredientes*/
+    .card ul, p { /*Ira escoder a lista de ingredientes*/
         display: none;
     }
 }
