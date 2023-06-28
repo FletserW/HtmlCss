@@ -28,5 +28,9 @@ window.addEventListener('load', function() { //Execulta a função ao iniciar o 
 
 function enviar() {
   window.alert('Envio realizado com sucesso!');
+};
+
+function showBrokenLinkMessage() {
+  alert("O link do Instagram esta indisponivel no momento!");
 }
 
