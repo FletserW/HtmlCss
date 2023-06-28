@@ -74,6 +74,23 @@
     button#close-btn:active {
         transform: translateY(-1px);
     }
+
+    #endereco {
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        display: flex;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    #endereco iframe {
+        width: 70%;
+    }
+
+    #endereco p {
+        margin-left: 10px;
+        text-align: left;
+    }
+
 </style>
 
 <body>
@@ -89,7 +106,7 @@
                     <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
                     <li class="nav-item"><a href="assents/pages/cardapio.html" class="nav-link">Cardápio</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="assents/pages/contato.html" class="nav-link">Contato</a></li>
                 </ul>
             </div>
             <section id="options">
@@ -105,7 +122,7 @@
                 <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
                 <li class="nav-item"><a href="assents/pages/cardapio.html" class="nav-link">Cardápio</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="assents/pages/contato.html" class="nav-link">Contato</a></li>
             </ul>
         </div>
     </header>
@@ -142,6 +159,11 @@
                     <div class="visual"><img src="assents/img/especalidades_2.png" alt=""></div>
                 </a>
             </div>
+        </section>
+        <h2>Endereço</h2>
+        <section id="endereco">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.2477268500506!2d-51.31716472520633!3d-30.1157240748878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951980262af79013%3A0x410a10d256336c1e!2sD&#39;it%C3%A1lia%20Pizzaria%20%26%20Restaurante!5e0!3m2!1spt-BR!2sbr!4v1687973646780!5m2!1spt-BR!2sbr" max-width="800" max-height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>D'itália Pizzaria & Restaurante <br> Avenida Getúlio Vargas <br> Centro, Guaíba - RS</p>
         </section>
     </main>
     <footer>
@@ -188,7 +210,7 @@
             </ul>
         </div>
         <div id="footer_copyright">
-            &#169; 2023 all rights reserved
+            &#169; 2023 Ultilizado para estudo
         </div>
     </footer>
 </body>
