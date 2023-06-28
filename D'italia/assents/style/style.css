@@ -88,6 +88,10 @@ header {
     padding: 10px;
 }
 
+li a:hover {
+    color: #3b5b0f;
+}
+
 #options {
     display: flex; /*Torna o container Flexivel*/
     margin-top: 0.1rem;
@@ -349,6 +353,7 @@ footer {
     div.card h1 { /*Tamanho das letras do card (tipos de pizza na pagina home)*/
         font-size: medium;
     }
+
     /*===== Footer ======*/
 
     #footer_content {

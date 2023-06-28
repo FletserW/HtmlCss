@@ -121,7 +121,8 @@
         padding: 0.5rem;
     }
 
-    .card ul, p { /*Ira escoder a lista de ingredientes*/
+    .card p,
+    .card ul { /*Ira escoder a lista de ingredientes*/
         display: none;
     }
 }
