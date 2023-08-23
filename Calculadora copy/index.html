@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora</title>
+</head>
+<body>
+  <section class="cal">
+    <input type="text" id="display" disabled>
+    <section class="buttons">      
+        <button onclick="clear()">AC</button>
+        <div></div>
+        <div></div>
+        <button class="operador" onclick="buttonp('/')">/</button>
+
+        <button onclick="buttonp('7')">7</button>
+        <button onclick="buttonp('8')">8</button>
+        <button onclick="buttonp('9')">9</button>
+        <button class="operador" onclick="buttonp('*')">*</button>
+
+        <button onclick="buttonp('4')">4</button>
+        <button onclick="buttonp('5')">5</button>
+        <button onclick="buttonp('6')">6</button>
+        <button class="operador" onclick="buttonp('-')">-</button>
+        <button onclick="buttonp('1')">1</button>
+        <button onclick="buttonp('2')">2</button>
+        <button onclick="buttonp('3')">3</button>
+        <button class="operador" onclick="buttonp('+')">+</button>
+        <div></div>
+        
+        <button onclick="buttonp('0')">0</button>
+        <button onclick="buttonp('.')">.</button>
+        <button onclick="calculateResult()">=</button>
+    </section>
+  </section>
+  <script src="Standard.js"></script>
+</body>
+</html>
