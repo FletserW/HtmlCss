@@ -5,13 +5,14 @@ function buttonp(value) {
   document.getElementById("display").value = valor;
 }
 
-function clear() {
+function clea() {
   valor = "";
   document.getElementById("display").value = "";
 }
 
 function calculateResult() {
   try {
+    const result = eval(valor);
     document.getElementById("display").value = result;
     valor = result.toString();
   } catch (error) {
