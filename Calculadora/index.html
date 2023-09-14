@@ -1,49 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=main, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora</title>
 </head>
 <body>
-    <main>
-        <section id="fundo">
-            <section id="display">
-                f
-            </section>
-            <section id="button">
-                <div class="buttonp">
-                    <button onclick="b1">AC</button>
-                    <button onclick="b">/</button>
-                </div>
-                <div class="buttonp">
-                    <button onclick="b7">7</button>
-                    <button onclick="b8">8</button>
-                    <button onclick="b9">9</button>
-                    <button onclick="b1">*</button>
-                </div>
-                <div class="buttonp">
-                    <button onclick="b4">4</button>
-                    <button onclick="b5">5</button>
-                    <button onclick="b6">6</button>
-                    <button onclick="b1">-</button>
-                </div>
-                <div class="buttonp">
-                    <button onclick="b1">1</button>
-                    <button onclick="b1">2</button>
-                    <button onclick="b1">3</button>
-                    <button onclick="b1">+</button>
-                </div>
-                <div class="buttonp">
-                    <button onclick="b1"></button>
-                    <button onclick="b1">0</button>
-                    <button onclick="b1">.</button>
-                    <button onclick="b1">=</button>
-                </div>
-            </section>
+  <section class="cal">
+    <input type="text" id="display" disabled>
+    <section class="buttons">      
+        <button onclick="clea()">AC</button>
+        <div></div>
+        <div></div>
+        <button class="operador" onclick="buttonp('/')">/</button>
 
-        </section>
-    </main>
+        <button onclick="buttonp('7')">7</button>
+        <button onclick="buttonp('8')">8</button>
+        <button onclick="buttonp('9')">9</button>
+        <button class="operador" onclick="buttonp('*')">*</button>
+
+        <button onclick="buttonp('4')">4</button>
+        <button onclick="buttonp('5')">5</button>
+        <button onclick="buttonp('6')">6</button>
+        <button class="operador" onclick="buttonp('-')">-</button>
+        <button onclick="buttonp('1')">1</button>
+        <button onclick="buttonp('2')">2</button>
+        <button onclick="buttonp('3')">3</button>
+        <button class="operador" onclick="buttonp('+')">+</button>
+        <div></div>
+        
+        <button onclick="buttonp('0')">0</button>
+        <button onclick="buttonp('.')">.</button>
+        <button onclick="calculateResult()">=</button>
+    </section>
+  </section>
+  <script src="Standard.js"></script>
 </body>
 </html>
