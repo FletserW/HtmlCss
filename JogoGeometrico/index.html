@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Acertar</title>
+    <style>
+        .game {
+        display: flex;
+        height: 100vh;
+        }
+
+        .image-container {
+        display: flex;
+        }
+
+        .image {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        cursor: pointer;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>EXERCICIO SOBRE FIGURAS GEOMÉTRICAS</h1>
+        <P> Clique na figura que represente um Exágono:</P>
+        <div class="game">
+            <div class="image-container">
+                <img class="image" src="img/quadrado.jpg" alt="Outra Imagem" onclick="errou(this)">
+                <img class="image" src="img/exagono.jpg" alt="Losango" onclick="acertou(this)">
+                <img class="image" src="img/triangulo.jpg" alt="Outra Imagem" onclick="errou(this)">
+                <img class="image" src="img/pentagono.jpg" alt="Outra Imagem" onclick="errou(this)">
+            </div>
+        </div>
+
+        <script>
+            function acertou(image) {
+            image.src = "img/acertou.jpg"; 
+            image.alt = "Vitória";
+            }
+
+            function errou(image) {
+            image.src = "img/errou.jpg";
+            image.alt = "Derrota";
+            }
+        </script>
+    </body>
+</html>
