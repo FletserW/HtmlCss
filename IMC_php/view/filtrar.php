@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="../style/style.css">
+
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Conecte-se ao banco de dados (substitua com suas credenciais)
