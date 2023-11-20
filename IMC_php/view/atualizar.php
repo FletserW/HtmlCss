@@ -1,11 +1,10 @@
-<link rel="stylesheet" type="text/css" href="../style/style.css">
-
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Conecte-se ao banco de dados
+    // Conecta ao banco de dados
     $db = new PDO('mysql:host=localhost;dbname=imc_db', 'root', '');
 
     // Coleta dados do formulário
+    $id = $_POST["id"];
     $nome = $_POST["nome"];
     $idade = $_POST["idade"];
     $peso = $_POST["peso"];
@@ -13,6 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Calcula o IMC
     $imc = $peso / ($altura * $altura);
+
     // Determina a classificação
     if($idade > 20 && $idade < 60) {
         if ($imc < 18.5) {
@@ -37,11 +37,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         }
     }
-    // Insira os dados no banco de dados
-    $query = $db->prepare("INSERT INTO pessoas (nome, idade, peso, altura, imc, classificacao) VALUES (?, ?, ?, ?, ?, ?)");
-    $query->execute([$nome, $idade, $peso, $altura, $imc, $classificacao]);
+    // Atualiza os dados no banco de dados
+    $query = $db->prepare("UPDATE pessoas SET nome = ?, idade = ?, peso = ?, altura = ?, imc = ?, classificacao = ? WHERE id = ?");
+    $query->execute([$nome, $idade, $peso, $altura, $imc, $classificacao, $id]);
 
-    // Redireciona de volta à página principal
+    // Redireciona de volta à página de filtro ou outra página apropriada
     header("Location: index.php");
+    exit();
+} else {
+    header("Location: filtrar.php");
+    exit();
 }
 ?>

@@ -19,14 +19,6 @@
             <h2>Filtrar Pessoas</h2>
             <form action="filtrar.php" method="post">
                 <label>Nome: <input type="text" name="filtro_nome"></label>
-                <label>Classificação:
-                    <select name="filtro_classificacao">
-                        <option value="baixo_peso">Baixo Peso</option>
-                        <option value="normal">Normal</option>
-                        <option value="sobrepeso">Sobrepeso</option>
-                        <option value="obesidade">Obesidade</option>
-                    </select>
-                </label>
                 <input type="submit" value="Filtrar">
             </form>
         </div>
